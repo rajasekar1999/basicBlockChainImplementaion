@@ -54,11 +54,11 @@ class Blockchain:
             else:
                 block.nonce = block.nounce + 1
                 
-blockchain = Blockchain()
+bc = Blockchain()
 
 for n in range(10):
-    blockchain.mine(Block("Block " + str(n+1)))
+    bc.mine(Block("Block " + str(n+1)))
     
-while blockchain.head != None:
-    print(blockchain.head)
-    blockchain.head = blockchain.head.next
+while bc.head != None:
+    print(bc.head)
+    bc.head = bc.head.next
