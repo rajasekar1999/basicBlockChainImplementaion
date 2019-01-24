@@ -57,6 +57,8 @@ class Blockchain:
 bc = Blockchain()
 
 for n in range(10):
+    
+    print ('The Result')
     bc.mine(Block("Block " + str(n+1)))
     
 while bc.head != None:
